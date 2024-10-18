@@ -21,7 +21,7 @@ nltk.download('omw-1.4')
 def load_glove_embeddings():
     """Load GloVe embeddings from file into a dictionary."""
     embeddings = {}
-    with open('../glove.6B.50d.txt', 'r', encoding='utf-8') as f:
+    with open('glove.6B.50d.txt', 'r', encoding='utf-8') as f:
         for line in f:
             values = line.split()
             word = values[0]
